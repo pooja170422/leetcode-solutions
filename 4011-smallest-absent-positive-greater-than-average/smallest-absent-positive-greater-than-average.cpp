@@ -10,8 +10,8 @@ public:
             st.insert(x);
         }
 
-        double avg = (double)sum / n;
-        int candidate = (int)floor(avg) + 1;   
+        int avg = sum / n;
+        int candidate = floor(avg) + 1;   
         candidate = max(candidate, 1);         
 
         while (st.count(candidate)) {
